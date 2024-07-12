@@ -27,6 +27,7 @@ const Home = () => {
     <div>
       Home
       <SearchBar setSerachTerm={setSerachTerm} />
+      {plants.length==0 && <div className="text-2xl font-bo">Loading.....</div>}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {filterdPlants.map((plants) => {
           return (
@@ -37,7 +38,7 @@ const Home = () => {
               >
                 <div className="details-con ">
                   <h1 className="text-2xl font-bold mb-4">{plants.category}</h1>
-                  <div>{plants.name}</div>
+                  <div>{plants.name}hi</div>
                   <div>${plants.price}</div>
                 </div>
                 <div className="w-full grid">
