@@ -22,7 +22,7 @@ const Details = () => {
   return (
     <div className="max-w-md mx-auto p-5">
       {plant ? (
-        <div className='border-2 bg-white p-5 rounded-lg shadow-lg'>
+        <div className='border-2 bg-slate-400 p-5 rounded-lg shadow-lg'>
           <div className="flex flex-col items-center">
             <h1 className='text-3xl font-bold mb-4'>{plant.name}</h1>
             <img src={plant.image} alt={plant.name} className="w-48 h-48 mb-4 rounded-lg shadow-md" />
