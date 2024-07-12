@@ -25,12 +25,12 @@ const filterdPlants = plants.filter(plant =>plant.name.toLowerCase().includes(se
     <div>
       Home
       <SearchBar setSerachTerm={setSerachTerm}/>
-<div className='grid grid-cols-3'>
+<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
        {
         filterdPlants.map((plants)=>{
           return(
           <Link to={`/plant/${plants.id}`} key={plants.id}>
-            <div className='flex items-center border-2 bg-slate-400 ' onClick={handleClick}>
+            <div className='flex items-center border-2 bg-slate-400 shadow-md rounded-lg p-4 h-5/5 ' onClick={handleClick}>
            <div className='details-con '>
           <h1 className='text-2xl font-bold mb-4'>{plants.category}</h1>
            <div>{plants.name}</div>

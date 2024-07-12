@@ -2,7 +2,9 @@ import React from 'react'
 
 const SearchBar = ({setSerachTerm}) => {
   const handleChange = (e)=>{
+    
     setSerachTerm(e)
+
   }
   return (
    <div>
