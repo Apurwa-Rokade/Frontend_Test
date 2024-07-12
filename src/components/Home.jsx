@@ -20,7 +20,7 @@ const Home = () => {
   console.log(searchTerm, "is serach");
 
   const filterdPlants = plants.filter((plant) =>
-    plant.name.toLowerCase().includes(searchTerm)
+    plant.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
   console.log(plants, "is plants");
   return (
